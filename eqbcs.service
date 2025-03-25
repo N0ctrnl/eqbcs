@@ -1,0 +1,11 @@
+[Unit]
+Description=EQBCS
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/sbin/eqbcs -p 12947
+User=root
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
